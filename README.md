@@ -1,6 +1,12 @@
 # micronaut_intercept_issue
 Micronaut 1.3.3 and interceptors called several times compared to version 1.2.6.
 
+Endpoint class has an around interceptor and extends EndpointSuperclass.
+2 endpoints a & b.
+Endpoint a returns directly to the client : works fine
+Endpoint b returns through EndPoint superclass : around interceptor is called several times
+
+
 Open gradle.properties and choose your Micronaut version.\
 With 1.3.3, run app and call endpoints :
 
