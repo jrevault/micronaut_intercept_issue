@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: micronaut.intercept_issue
+---
+testFramework: junit
+sourceLanguage: java
